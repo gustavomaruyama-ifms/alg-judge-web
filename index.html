@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="alg-judge">
+    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8"/>
+    <meta http-equiv="content-language" content="pt-br"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-loading-bar/build/loading-bar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+
+    <!--DOMINIO APLICACAO-->
+    <script src="app/application/app.js"></script>
+    <script src="app/application/config/config.js"></script>
+    <script src="app/application/route/route.js"></script>
+    <script src="app/application/controller/navbarController.js"></script>
+
+    <!--DOMINIO PROBLEMA-->
+    <script src="app/problema/route/route.js"></script>
+    <script src="app/problema/service/problemaAPIService.js"></script>
+    <script src="app/problema/controller/problemaCadastroController.js"></script>
+    <script src="app/problema/controller/problemaEdicaoController.js"></script>
+    <script src="app/problema/controller/problemaListagemController.js"></script>
+</head>
+<body>
+<div ng-include="'app/application/view/header.html'"></div>
+<div class="container-fluid">
+    <div ng-view="view"></div>
+</div>
+<div ng-include="'app/application/view/footer.html'"></div>
+</body>
+</html>
