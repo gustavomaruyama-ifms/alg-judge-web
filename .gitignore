@@ -1,2 +1,6 @@
-.idea
-/bower_components
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+package-lock.json
+.idea/
